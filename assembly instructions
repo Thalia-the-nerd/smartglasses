@@ -1,0 +1,60 @@
+### Required Materials:
+1. Your existing glasses
+2. Raspberry Pi Zero W
+3. Pi Camera Module v2
+4. 128x64 OLED Display (SSD1306)
+5. 9-key Membrane Keypad
+6. 2000mAh LiPo Battery
+7. LiPo Battery Charger Board
+8. Small Speaker
+9. Mounting supplies:
+   - Double-sided tape (3M VHB)
+   - Hot glue gun
+   - Clear epoxy
+   - Heat shrink tubing
+   - Thin gauge wire
+   - Small zip ties
+
+### Tools Needed:
+1. Soldering iron and solder
+2. Wire strippers
+3. Small Phillips screwdriver
+4. Tweezers
+5. Scissors
+6. Multimeter
+7. Heat gun (for heat shrink)
+
+### General Assembly Sequence:
+
+1. **Component Testing (30 mins)**
+```bash name=test_components.sh
+# Before mounting, test all components
+python3 test_display.py
+python3 test_camera.py
+python3 test_keypad.py
+```
+
+2. **Prepare Components**
+```plaintext name=component_prep.txt
+1. Trim Pi Camera ribbon cable to minimum required length
+2. Pre-tin all wire connections
+3. Prepare short jumper wires for display
+4. Cut heat shrink tubing to size
+```
+
+3. **Basic Connections**
+```plaintext name=basic_connections.txt
+Display to Pi Zero W:
+- VCC → 3.3V (Pin 1)
+- GND → Ground (Pin 6)
+- SDA → GPIO2 (Pin 3)
+- SCL → GPIO3 (Pin 5)
+
+Camera Module:
+- Insert into Pi's CSI port
+- Blue side faces USB ports
+
+Keypad to Pi:
+- Row pins → GPIO 5,6,13,19
+- Col pins → GPIO 12,16,20
+```
