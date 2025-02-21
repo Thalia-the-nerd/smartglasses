@@ -1,0 +1,93 @@
+1. Hardware Components List
+2. Assembly Instructions
+3. Software Implementation
+4. Features Breakdown
+
+### 1. Hardware Components List (Budget-Friendly):
+
+- Raspberry Pi Zero W ($10) - Compact and power-efficient
+- 128x64 OLED Display ($10-15) - SSD1306 or similar
+- Pi Camera Module v2 ($25) or compatible camera
+- 9-key Membrane Keypad ($5)
+- Small LiPo Battery 3.7V 2000mAh ($15)
+- LiPo Battery Charger/Power Management Board ($10)
+- Small Speaker ($5)
+- Microphone Module ($5)
+- 3D Printed Frame ($10-20 for materials)
+- Male/Female Jumper Wires ($5)
+- MicroSD Card 32GB ($10)
+
+Total estimated cost: $110-130
+
+### 2. Assembly Instructions:
+
+1. 3D print the glasses frame with:
+   - Camera mount at front
+   - OLED display mount on right lens area
+   - Battery compartment in right arm
+   - Keypad mount on right arm
+   - Speaker mount near ear
+   
+2. Connections:
+   - Connect OLED display via I2C
+   - Connect camera via CSI cable
+   - Wire keypad to GPIO pins
+   - Connect speaker to audio output
+   - Wire battery management board
+   - Connect microphone to USB or GPIO
+### 3. Features Overview:
+
+1. Basic Features:
+- Photo/Video capture
+- Music playback
+- OLED display interface
+- Battery monitoring
+- Text-to-speech announcements
+
+2. Ski Mode:
+- Lift selection
+- Trail difficulty filtering
+- Route suggestions
+- Real-time location tracking
+
+3. Online Features:
+- Discord notifications
+- Google Voice notifications
+- Weather updates
+- Trail conditions
+
+4. Offline Features:
+- Music playback
+- Photo/video capture
+- Saved route navigation
+- Math recognition/solving
+
+5. Fun Features:
+- "Airstrike" mode (fun visual effect)
+- Voice changers
+- AR trail markers
+
+### 4. Usage Instructions:
+
+1. Navigation:
+- Key 1-9: Menu selections
+- * : Back
+- # : Mode switch
+- 0 : Enter/Confirm
+
+2. Modes:
+- Main Menu
+- Camera Mode
+- Music Mode
+- Ski Mode
+- Math Mode
+- Face Recognition
+- Fun Mode
+
+### 5. Power Management:
+
+The system should last about 4-6 hours on a single charge. Implement power-saving features:
+- Display dimming
+- Sleep mode when inactive
+- Background process management
+- Optional features disable in low battery
